@@ -170,5 +170,13 @@ let arr=[10,20,30,40,50,60,70];
 // });
 // console.log(ans);
 
-let fun=a=>a+" hello ";
-console.log(fun(10));
+let sum=0;
+let ans=arr=>{
+    for(let i=0;i<arr.length;i++)
+    {
+        sum=sum+arr[i];
+    }
+    return sum;
+}
+
+console.log("sum is "+ans(arr));
